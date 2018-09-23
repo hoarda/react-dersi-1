@@ -3,7 +3,7 @@ import React from "react";
 function Person(props) {
   return (
     <div>
-      <h2>{props.name}</h2>
+      <h2 style={{ color: "grey" }}>{props.name}</h2>
       <p>jobs {props.jobs}</p>
       <p>age {props.age}</p>
       <p>
@@ -14,7 +14,7 @@ function Person(props) {
 }
 
 function Stars(props) {
-  return "★️".repeat(props.number);
+  return <span>{"★️".repeat(props.number)}</span>;
 }
 
 function App() {
