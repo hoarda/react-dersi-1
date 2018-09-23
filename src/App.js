@@ -1,29 +1,25 @@
 import React from "react";
 
 function Person(props) {
-  let yildiz;
-  for (let i = 0; i < props.sportiness; i++) {
-    yildiz = yildiz + "★️";
-  }
-
   return (
     <div>
       <h2>{props.name}</h2>
       <p>jobs {props.jobs}</p>
       <p>age {props.age}</p>
-      <p>sportiness {yildiz}</p>
+      <p>
+        sportiness <Stars number={props.sportiness} />
+      </p>
     </div>
   );
 }
 
-// function Stars(props) {
-//   let yildiz;
-
-//   for (let i = 0; i < ; i++) {
-//     yildiz = yildiz + "★️";
-//   }
-//   return yildiz;
-// }
+function Stars(props) {
+  let yildiz = "";
+  for (let i = 0; i < props.number; i++) {
+    yildiz = yildiz + "★️";
+  }
+  return yildiz;
+}
 
 function App() {
   return (
