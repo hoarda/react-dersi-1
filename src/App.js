@@ -1,15 +1,22 @@
 import React from "react";
-import Person from "./Person";
 
+function Person(props) {
+  return (
+    <li>
+      name {props.name}
+      jobs {props.jobs}
+      age {props.age}
+      sportiness {props.sportiness}
+    </li>
+  );
+}
 function App() {
   return (
     <div>
       <h1>React Dersi I</h1>
       <ul>
-        <Person name="Ugur ARDA" />
-        <Person jobs="Polis" />
-        <Person age="25" />
-        <Person spor="5" />
+        <Person name="Ugur ARDA " jobs="Polis " age="25 " sportiness="5 " />
+        <Person name="Oktay ARDA " jobs="Ogrenci " age="25 " sportiness="5 " />
       </ul>
     </div>
   );
