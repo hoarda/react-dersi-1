@@ -14,11 +14,7 @@ function Person(props) {
 }
 
 function Stars(props) {
-  let yildiz = "";
-  for (let i = 0; i < props.number; i++) {
-    yildiz = yildiz + "★️";
-  }
-  return yildiz;
+  return "★️".repeat(props.number);
 }
 
 function App() {
