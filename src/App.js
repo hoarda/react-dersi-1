@@ -14,7 +14,8 @@ function Person(props) {
 }
 
 function Stars(props) {
-  return props.number;
+  const yildiz = "★️";
+  return yildiz;
 }
 
 function App() {
