@@ -7,14 +7,17 @@ function Person(props) {
       <p>jobs {props.jobs}</p>
       <p>age {props.age}</p>
       <p>
-        sportiness <Stars number={props.sportiness} />
+        sportiness <Stars numbers={props.sportiness} />
       </p>
     </div>
   );
 }
 
 function Stars(props) {
-  const yildiz = "★️";
+  let yildiz;
+  for (let i = 0; i < ; i++) {
+    yildiz = yildiz + "★️";
+  }
   return yildiz;
 }
 
