@@ -14,7 +14,12 @@ function Person(props) {
 }
 
 function Stars(props) {
-  return <span style={{ color: "green" }}>{"★️".repeat(props.number)}</span>;
+  return (
+    <span>
+      <span style={{ color: "green" }}>{"★️".repeat(props.number)}</span>
+      <span style={{ color: "grey" }}>{"★️".repeat(5 - props.number)}</span>
+    </span>
+  );
 }
 
 function App() {
