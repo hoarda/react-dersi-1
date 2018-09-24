@@ -12,8 +12,8 @@
 - [ ] Use red color for styling
 
 ```jsx
-<person ...  sportive={3} favorite={{true}} />
-<person ...  sportive={5} favorite={{false}} />
+<person ...  sportive={3} favorite={true} />
+<person ...  sportive={5} favorite={false} />
 ```
 
 ![](docs/favorite-example.png)
