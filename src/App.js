@@ -28,7 +28,6 @@ function Person(props) {
 function Heart(props) {
   if (props.imo === true) {
     return (
-      // (props.favorite==true)
       <span>
         <span style={{ color: "red" }}> {"♥"}</span>
       </span>
