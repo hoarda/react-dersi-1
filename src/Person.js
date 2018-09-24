@@ -1,5 +1,15 @@
 import React from "react";
-import Person from "./App";
+
+import Heart from "./Heart";
+
+function Stars(props) {
+  return (
+    <span>
+      <span style={{ color: "green" }}>{"★️".repeat(props.number)}</span>
+      <span style={{ color: "grey" }}>{"★️".repeat(5 - props.number)}</span>
+    </span>
+  );
+}
 
 function Person(props) {
   return (
