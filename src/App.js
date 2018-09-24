@@ -19,10 +19,28 @@ function Person(props) {
       <p>
         sportiness <Stars number={props.sportiness} />
       </p>
+      <p>
+        favorite <Heart imo={props.favorite} />
+      </p>
     </div>
   );
 }
-
+function Heart(props) {
+  if (props.imo === true) {
+    return (
+      // (props.favorite==true)
+      <span>
+        <span style={{ color: "red" }}> {"♥"}</span>
+      </span>
+    );
+  } else {
+    return (
+      <span>
+        <span style={{ color: "black" }}> {"♡"}</span>
+      </span>
+    );
+  }
+}
 function Stars(props) {
   return (
     <span>
@@ -36,8 +54,20 @@ function App() {
   return (
     <div>
       <h1>React Dersi I</h1>
-      <Person name="Ugur ARDA" jobs="Polis" age="25" sportiness={5} />
-      <Person name="Oktay ARDA" jobs="Ogrenci" age="22" sportiness={3} />
+      <Person
+        name="Ugur ARDA"
+        jobs="Polis"
+        age="25"
+        sportiness={5}
+        favorite={true}
+      />
+      <Person
+        name="Oktay ARDA"
+        jobs="Ogrenci"
+        age="22"
+        sportiness={3}
+        favorite={false}
+      />
     </div>
   );
 }
