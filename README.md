@@ -6,7 +6,7 @@
 - [x] creaate a Star component
 - [x] Style the component
 
-## Add favoite attribute
+## Add favorite attribute
 
 - [ ] Add fovorite attribute
 - [ ] Use red color for styling
