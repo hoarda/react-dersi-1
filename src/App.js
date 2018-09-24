@@ -26,19 +26,9 @@ function Person(props) {
   );
 }
 function Heart(props) {
-  if (props.imo === true) {
-    return (
-      <span>
-        <span style={{ color: "red" }}> {"♥"}</span>
-      </span>
-    );
-  } else {
-    return (
-      <span>
-        <span style={{ color: "black" }}> {"♡"}</span>
-      </span>
-    );
-  }
+  if (props.imo) return <span style={{ color: "red" }}> {"♥"}</span>;
+  else return <span style={{ color: "black" }}> {"♡"}</span>;
+  // return <span style={{ color: "red" }}> {"♥".if(props.imo === true)}</span>;
 }
 function Stars(props) {
   return (
