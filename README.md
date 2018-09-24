@@ -11,9 +11,9 @@
 - [ ] Add fovorite attribute
 - [ ] Use red color for styling
 
-```html
-<person ...  sportive={3} favorite={{true}}>
-<person ...  sportive={5} favorite={{false}}>
+```jsx
+<person ...  sportive={3} favorite={{true}} />
+<person ...  sportive={5} favorite={{false}} />
 ```
 
 ![](docs/favorite-example.png)
