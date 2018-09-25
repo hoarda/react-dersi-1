@@ -1,15 +1,6 @@
 import React from "react";
-
 import Heart from "./Heart";
-
-function Stars(props) {
-  return (
-    <span>
-      <span style={{ color: "green" }}>{"★️".repeat(props.number)}</span>
-      <span style={{ color: "grey" }}>{"★️".repeat(5 - props.number)}</span>
-    </span>
-  );
-}
+import Stars from "./Stars";
 
 function Person(props) {
   return (
@@ -23,13 +14,13 @@ function Person(props) {
     >
       <h2
         style={{
-          color: "grey",
+          color: "black",
           borderBottom: "solid",
           width: "310px",
           margin: "-5px"
         }}
       >
-        <h3 style={{ color: "black", padding: "5px" }}>{props.name}</h3>
+        <h3 style={{ color: "grey", padding: "5px" }}>{props.name}</h3>
       </h2>
       <p>jobs {props.jobs}</p>
       <p>age {props.age}</p>
