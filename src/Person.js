@@ -30,7 +30,7 @@ function Person(props) {
         sportiness <Stars number={props.sportiness} />
       </p>
       <p>
-        favorite <Heart imo={props.favorite} />
+        favorite <Heart isActive={props.favorite} />
       </p>
     </div>
   );
