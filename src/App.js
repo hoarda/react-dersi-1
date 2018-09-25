@@ -1,7 +1,5 @@
 import React from "react";
-import { width } from "window-size";
 import Person from "./Person";
-import Heart from "./Heart";
 
 function App() {
   return (
