@@ -1,10 +1,24 @@
 import React from "react";
 import Person from "./Person";
+import Heart from "./Heart";
+import Stars from "./Stars";
 
 function App() {
   return (
     <div>
-      <h1>React Dersi I</h1>
+      <h1>Component gallery</h1>
+      <h2>Heart Component</h2>
+      <Heart isActive={true} />
+      <Heart isActive={false} />
+      <hr />
+      <h2>Stars Component</h2>
+      <Stars number={3} />
+      <br />
+      <Stars number={5} />
+      <br />
+      <Stars number={0} />
+      <hr />
+      <h2>Person Component</h2>
       <Person
         name="Ugur ARDA"
         jobs="Polis"
@@ -19,6 +33,7 @@ function App() {
         sportiness={3}
         favorite={false}
       />
+      <hr />
     </div>
   );
 }
