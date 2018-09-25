@@ -8,12 +8,10 @@
 
 ## Add favorite attribute
 
-- [ ] Add fovorite attribute
-- [ ] Use red color for styling
+- [x] Add fovorite attribute
+- [x] Use red color for styling
 
 ```jsx
 <person ...  sportive={3} favorite={true} />
 <person ...  sportive={5} favorite={false} />
 ```
-
-![](docs/favorite-example.png)
