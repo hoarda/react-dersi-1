@@ -17,12 +17,19 @@ function Person(props) {
       style={{
         border: "solid",
         width: "300px",
-        margin: "5px 30px 2px 20px ",
+        margin: "5px 20px 2px 20px ",
         padding: "5px 5px 5px 5px"
       }}
     >
-      <h2 style={{ color: "grey", borderBottom: "solid", width: "300px" }}>
-        {props.name}
+      <h2
+        style={{
+          color: "grey",
+          borderBottom: "solid",
+          width: "310px",
+          margin: "-5px"
+        }}
+      >
+        <h3 style={{ color: "black", padding: "5px" }}>{props.name}</h3>
       </h2>
       <p>jobs {props.jobs}</p>
       <p>age {props.age}</p>
