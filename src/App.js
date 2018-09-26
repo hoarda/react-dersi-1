@@ -15,7 +15,7 @@ function GalleryItem(props) {
 
 function App() {
   return (
-    <div>
+    <div style={{ paddingLeft: "10px" }}>
       <h1>Component gallery</h1>
 
       <GalleryItem name="Heart!">
